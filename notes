@@ -1,0 +1,12 @@
+
+please don't go searching for it again:
+* -s in qemu run script is shorthand for: -gdb tcp::1234
+
+gdb vmlinux
+target remote :1234
+
+bypass kpti:
+swapgs_restore_regs_and_return_to_usermode() in /proc/kallsyms
+
+kernel base address:
+/ # cat /proc/kallsyms | grep startup_64
