@@ -3,7 +3,7 @@ import sys
 
 def howto():
   print('Provide string to hexify as argument.\n'
-        'ex. ./str2hex flag.txt\n')
+        'ex. ./str2hex.py flag.txt\n')
   exit()
 
 def hexify(string):
